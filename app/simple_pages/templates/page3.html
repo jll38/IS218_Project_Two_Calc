@@ -1,4 +1,110 @@
 {% extends "base.html" %}
 {% block content %}
-    Page 3
+    <div class="container-lg" style="background-color:white">
+    <div class="row">
+            <div class="col-md-8" style="border-right-style: solid;border-right-color: #d7d9db;padding:20px;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/2560px-Python_logo_and_wordmark.svg.png"
+                   class="img-thumbnail" style="max-width:50%;display:block;margin:auto; border-style: none" alt="Git logo">
+                <h1>What is Python?</h1>
+                <p>
+                <strong>Python</strong> is a high-level programming language with the intent
+                    of emphasizing code readability. Python is very popular with machine learning
+                    and, in this case, web development. Something very distinctive of Python is
+                    that it makes use of indents to determine the flow of code rather than curly
+                    brackets.
+            </p>
+              </div>
+            <div class="col-md-4" style="padding:20px;">
+                <img src="https://miro.medium.com/max/1400/1*1X0-98EiQNkwBJj2vnTTqQ.jpeg"
+                class="img-thumbnail"
+                alt="Python Code Image"
+                style="max-width: 75%;display: block;margin: auto;">
+                <p style="display: block;margin: auto;text-align: center"><i>Example of Python code</i></p>
+            </div>
+    </div>
+
+    <div class="row">
+            <div class="col-md-8" style="border-right-style: solid;border-right-color: #d7d9db; padding:20px;   ">
+                <h1>Flask</h1>
+                <p>
+                    Flask is a web-development framework for Python made up of
+                    a collection of libraries and modules. Flask's role currently
+                    in this project is displaying the HTML files and calling upon
+                    Bootstrap V5
+                    <br/>
+                    If you wish to have a clone of this project on your device, you could type
+                    in the following command into any command line that supports git.<br/>
+                    <span style ="font-size:80%"><samp>git clone https://github.com/jll38/IS218_S22_Project_One</samp></span>
+                </p>
+            </div>
+
+            <div class="col-md-4" style="padding:20px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/1200px-Flask_logo.svg.png"
+                class="img-thumbnail"
+                alt="Flask Logo"
+                style="max-width: 100%;display: block;margin: auto;border:none">
+            </div>
+    </div>
+    <div class="row">
+            <div class="col-md-8" style="border-right-style: solid;border-right-color: #d7d9db; padding:20px;   ">
+                <h1>Project Files</h1>
+                <p>Here is an outline of this project's filesystem, along with an explanation
+                each file's purpose in this project.</p>
+                <ul style="background-color: #d7d9db;border-radius: 20px;padding:25px">
+                    <li>Project Root Folder | Root of the Project
+                        <ul>
+                            <li>.github
+                              <ul>
+                                  <li>workflows
+                                  <ul>
+                                      <li>test-build-deploy.yml | Instructions for Github to run the tests
+                                      build the containers, and deploy to Heroku</li>
+                                  </ul>
+                                  </li>
+                              </ul>
+                            </li>
+                            <li>static
+                              <ul>
+                                  <li>images | Stores images for the app
+                                  <ul>
+                                      <li>Filesystem.PNG | Image of the filesystem as shown on the right</li>
+                                      <li>me.PNG | A picture of myself used for testing</li>
+                                  </ul>
+                                  </li>
+                              </ul>
+                            </li>
+                            <li>templates | Stores HTML files
+                              <ul>
+                                  <li>docker.html | Docker Webpage</li>
+                                  <li>flask.html | Scrapped Webpage (Combined with python.html)</li>
+                                  <li>git.html | Git Webpage</li>
+                                  <li>index.html | Homepage</li>
+                                  <li>python.html | Python and Flask Webpage (Current Page)</li>
+                              </ul>
+                            </li>
+                            <li>tests | Contains testing files
+                                <ul>
+                                    <li>pytest.py | Testing file for Github</li>
+                                </ul>
+                            </li>
+                            <li>venv | Library Root Dir</li>
+                            <li>.dockerignore | Tells docker what to ignore</li>
+                            <li>.gitignore | Tells Git what to ignore
+                            <li>app.py | Initializes app and renders HTML pages</li>
+                            <li>docker-compose.yml | Orchestration file that contains
+                            the confirguration of the project.</li>
+                            <li>Dockerfile | File used to create an image to run
+                            inside a container that runs the program</li>
+                            <li>Heroku.yml | Configures Heroku deployment</li>
+                            <li>requirements.txt | list of requirements that Python installs</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-4" style="padding:20px;">
+                <img src="./static/images/Filesystem.PNG" class="img-thumbnail" alt="filesystem" style="margin-top: 50%">
+            </div>
+    </div>
+</div>
 {% endblock %}

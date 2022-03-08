@@ -1,4 +1,67 @@
 {% extends "base.html" %}
 {% block content %}
-    Index Page
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="https://images4.alphacoders.com/985/thumb-1920-985805.png" class="d-block w-100" alt="Git Logo">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Git</h5>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="https://i.pinimg.com/originals/54/2c/8b/542c8b091f6c1bc3a8a1c33a71466521.jpg" class="d-block w-100" alt="Python Logo">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Python</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://wallpaperaccess.com/full/2982327.jpg" class="d-block w-100" alt="Docker Logo">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Docker</h5>
+      </div>
+    </div>
+      <div class="carousel-item">
+      <img src="https://web.njit.edu/~jll38/cicd.png" class="d-block w-100" alt="cicd logo">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>CI/CD</h5>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="container-lg">
+  <div class="row" style="padding:20px">
+      <div class="col-6" style="border-left:solid #d7d9db;border-right:solid #d7d9db">
+              <h1>About Me</h1>
+              <p>
+                  My name is Julian Lechner, and at the time of creating this webpage, I am a Sophomore
+                  student at New Jersey Institute of Technology. This webpage was created as my first
+                  project for my "Building Web Applications" course! This page utilizes and goes into
+                  detail about technologies such as Git, Docker, Python, and Flask.
+              </p>
+      </div>
+      <div class="col-6" style="border-right:solid #d7d9db">
+              <h1>Aspirations</h1>
+              <p>
+                  I'm aiming to hone my skills in the previously mentioned technologies. I want to
+                  build stunning websites and brilliant user-experiences. As of 3/3/2022, I'm looking
+                  forward to what I will learn and I will hopefully land an internship to gain even more
+                  hands on experience in the field.
+              </p>
+      </div>
+  </div>
 {% endblock %}

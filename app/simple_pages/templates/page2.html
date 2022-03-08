@@ -1,4 +1,75 @@
 {% extends "base.html" %}
 {% block content %}
-    Page 2
+    <div class="container-lg" style="background-color:white">
+    <div class="row">
+        <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
+            <h1>What is Docker?</h1>
+            <p>
+                Docker is a tool that allows developers to deploy their applications
+                in a sandbox environment, utilizing OS-level linux virtualization.
+                Docker utilizes containers to run these software applications, rather than
+                virtual machines, with the main difference being in computational power
+                and efficiency. Docker simplifies and accelerates your workflow,
+                while giving developers the freedom to innovate with their choice of tools,
+                application stacks, and deployment environments for each project.
+            </p>
+        </div>
+        <div class="col-4">
+            <img src="https://www.docker.com/sites/default/files/d8/2019-07/vertical-logo-monochromatic.png"
+                 class="img-thumbnail" alt="Docker Logo"
+            style="max-height: 85%;max-width: 85%; display:block;margin:auto; border-style: none">
+        </div>
+    </div>
+    <div class="row" style="padding-top:25px">
+        <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
+            <h1>Containers</h1>
+            <p>
+                A container is a standard software unit that
+                encapsulates code and all of its dependencies.
+                They are fast and reliable. A Docker container
+                image is a small, standalone software package
+                that contains everything needed to run a program,
+                including code, runtime, system tools,
+                system libraries, and settings.
+            </p>
+        </div>
+        <div class="col-4">
+            <img src="https://images.contentstack.io/v3/assets/blt300387d93dabf50e/bltb6200bc085503718/5e1f209a63d1b6503160c6d5/containers-vs-virtual-machines.jpg"
+                 class="img-thumbnail" alt="Docker Containers Example"
+            style="max-height: 85%;max-width: 85%; display:block;margin:auto; border-style: none">
+            <p style="text-align: center"><i>Virtual Machines vs. Containers</i></p>
+        </div>
+    </div>
+
+    <div class="row" style="padding-top:25px">
+        <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
+            <h1>Docker Commands</h1>
+            <p>
+                Docker utilizes the commandline for most, if not, all of it's functionalities,
+            more specifically it is designed around the Linux commandline.
+            However, it is possible to run these commands in Windows utilizing
+            WSL and Powershell.
+            </p>
+            <p style="background-color: #d7d9db;border-radius: 25px;padding:20px">
+                <samp>docker -version</samp> | Returns the currently installed version of docker<br>
+                <samp>docker pull (image name)</samp> | Used to pull images from the Docker Repository/Docker Hub<br>
+                <samp>docker run -it -d (image name)</samp> | Creates a container from an image<br>
+                <samp>docker ps</samp> | Returns a list of all running containers <br>
+                <samp>docker exec -it (container id)</samp> | Accesses the running container<br>
+                <samp>docker kill (container id)</samp> | Kills the container immediately<br>
+                <samp>docker commit (container id) (username/imagename)</samp> | Creates new image of an edited container<br>
+                Ex:<br>
+                <span style ="padding-left:20px">"<samp>docker commit 23f78beaa2f3 jll38/is218_s22_project_one:master</samp>"</span><br>
+                <smap>docker push (username/imagename)</smap> | Pushes an image to the Docker Hub Repository<br>
+                <samp>docker images</samp> | Lists all locally stored docker images <br>
+                <samp>docker rm (container id)</samp> | Deletes a stopped container.<br>
+                <samp>docker build</samp> | Builds an image from a dockerfile
+
+            </p>
+        </div>
+        <div class="col-4">
+
+        </div>
+    </div>
+</div>
 {% endblock %}

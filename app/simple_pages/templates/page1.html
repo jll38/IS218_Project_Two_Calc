@@ -1,4 +1,60 @@
 {% extends "base.html" %}
 {% block content %}
-    Page 1
+    <div class="container-lg" style="background-color:white">
+    <div class="row">
+            <div class="col-md-8" style="border-right-style: solid;border-right-color: #d7d9db;padding:20px;">
+              <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png"
+                   class="img-thumbnail" style="max-width:50%;display:block;margin:auto; border-style: none" alt="Git logo">
+                <h1>What is Git?</h1>
+                <p>
+                <strong>Git</strong> is a free and open source version control system
+                designed to help manage projects big or small. It has become standard
+                in the industry, used by over <strong>73 million developers</strong>.
+                GitHub is one of the main ways to track code repositories and branches,
+                making code readily accessible to be pulled or cloned.<br/>If you wish
+                    to have a clone of this project on your device, you could type
+                    in the following command into any command line that supports git.<br/>
+                    <samp>git clone https://github.com/jll38/IS218_S22_Project_One</samp>
+            </p>
+              </div>
+            <div class="col-md-4" style="padding:20px;">
+                <img class="img-thumbnail"
+                     src="https://aidanfinn.com/wp-content/uploads/2022/01/GitHub-logo.png"
+                     alt="github logo"
+                     style="max-width:50%;max-height: 50%;border-style: none; display:block;margin:auto; ">
+              <h2>Version Control</h2>
+                <p>
+                    Version Control is the practice of tracking and managing changes to source code over time.
+                    Every file in the repository has a complete long-term changelog that can span years.
+                    Many developers utilize GitHub as a way to store their code repositories.
+                </p>
+            </div>
+    </div>
+
+    <div class="row">
+            <div class="col-md-8" style="border-right-style: solid;border-right-color: #d7d9db; padding:20px;   ">
+                <h1>Commits</h1>
+                <p>
+                    <strong>Commits</strong> are essentially a snapshot of a project's current
+                    changes/structure. Commits are usually followed by a "push" to the source
+                    code repository by the developer. This is a big part of version control
+                    and allows us to upload our most up-to-date version of a project easily,
+                    along with keeping track of its history.
+
+                </p>
+            </div>
+
+            <div class="col-md-4" style="padding:20px;">
+              <h2>Branches</h2>
+                <p>
+                    Branches are essentially a pointer to a snapshot of your changes made.
+                    They are essentially independent lines of development.
+                    An example of a good use of branching is when you're working on new
+                    features or bug fixes. It isolates your work from that of other team members,
+                    Your branches and the branches of your team members could then be merged
+                    back into the main project.
+                </p>
+            </div>
+    </div>
+</div>
 {% endblock %}
