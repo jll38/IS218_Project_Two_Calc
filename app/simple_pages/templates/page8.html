@@ -29,11 +29,22 @@
             <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
                 <h1>Single-Responsibility Principle</h1>
                 <p>
-                    The <strong>Single-Responsibility Principle</strong> states:<br>
+                    The <strong>Single-Responsibility Principle</strong> states:<br/>
                     <span style="border-left:gray solid 5px; padding-left: 20px">"A class should have one
-                    and only one reason to change, meaning that a class should have only one job."
+                    and only one reason to change"
                 </span> <br/>
-
+                    This principle simply states that a class or function should only have
+                    <i>one and only one</i> responsibility. Due to that fact, there should
+                    only be one reason to change it. Say you wanted to make a program that
+                    finds the average and maximum/largest value in a list. Rather than having
+                    a singular function that returns both values, the average and maximum should
+                    be returned by two seperate functions that may be called upon. There are many
+                    advantages to following this principle.
+                <ul>
+                    <li>Easier to localize errors</li>
+                    <li>More instances of code reusability</li>
+                    <li>Easier testing</li>
+                </ul>
                 </p>
             </div>
             <div class="col-4">
@@ -46,8 +57,11 @@
                 <h1>Open-Closed Principle</h1>
                 <p>
                     The <strong>Open-Closed Principle</strong> states:<br>
-                    <span style="border-left:gray solid 5px; padding-left: 20px">""
-                </span> <br/>
+                    <span style="border-left:gray solid 5px; padding-left: 20px">
+                        "Objects or entities should be open for extension but closed for modification."
+                    </span><br/>
+                    This principle essentially means that a class should be extendable but without
+                    modifying the class itself.
 
                 </p>
             </div>
@@ -71,34 +85,34 @@
                 <p style="text-align: center"><i></i></p>
             </div>
         </div>
-    <div class="row" style="padding-top:25px">
-        <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
-            <h1>Interface Segregation Principle</h1>
-            <p>
-                The <strong>Interface Segregation Principle</strong> states:<br>
-                <span style="border-left:gray solid 5px; padding-left: 20px">""
+        <div class="row" style="padding-top:25px">
+            <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
+                <h1>Interface Segregation Principle</h1>
+                <p>
+                    The <strong>Interface Segregation Principle</strong> states:<br>
+                    <span style="border-left:gray solid 5px; padding-left: 20px">""
                 </span> <br/>
 
-            </p>
-        </div>
-        <div class="col-4">
+                </p>
+            </div>
+            <div class="col-4">
 
-            <p style="text-align: center"><i></i></p>
+                <p style="text-align: center"><i></i></p>
+            </div>
         </div>
-    </div>
-    <div class="row" style="padding-top:25px">
-        <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
-            <h1>Dependency Inversion Principle</h1>
-            <p>
-                The <strong>Dependency Inversion Principle</strong> states:<br>
-                <span style="border-left:gray solid 5px; padding-left: 20px">""
+        <div class="row" style="padding-top:25px">
+            <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
+                <h1>Dependency Inversion Principle</h1>
+                <p>
+                    The <strong>Dependency Inversion Principle</strong> states:<br>
+                    <span style="border-left:gray solid 5px; padding-left: 20px">""
                 </span> <br/>
 
-            </p>
-        </div>
-        <div class="col-4">
+                </p>
+            </div>
+            <div class="col-4">
 
-            <p style="text-align: center"><i></i></p>
+                <p style="text-align: center"><i></i></p>
+            </div>
         </div>
-    </div>
 {% endblock %}
