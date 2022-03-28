@@ -35,19 +35,34 @@
             <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
                 <h1>AAA Testing in Calculator</h1>
                 <p>
+                    The two functions shown on the figure to the right is a perfect
+                    example of how AAA testing works. Here we have the multiply
+                    and divide functions from the calculator program.<br/>
+                </p>
+                <p class="quote">
+                    <strong>Arrange -</strong> In the multiply test, we first arrange the conditions by
+                    creating a calculator object, and adding 1. This is due to the fact
+                    that in the calculator class, <code>result</code> is equal to 0 starting
+                    out, so if we were to test without setting <code>result</code> to a non-zero
+                    number, the result will ALWAYS be zero.<br/><br/>
 
+                    <strong>Act -</strong> The conditions are set up for the test. We assign a variable
+                    to the output of <code>calculator.multiply(5)</code>.<br/><br/>
+
+                    <strong>Assert -</strong> Finally, the output of the multiply method is tested. If the
+                    method works as expected, the test will pass.
                 </p>
             </div>
             <div class="col-4">
-
-                <p style="text-align: center"><i></i></p>
+                <img class="img-thumbnail" src="./static/images/calc_test_AAA.PNG"/>
+                <p style="text-align: center"><i>calculator_test.py</i></p>
             </div>
         </div>
         <div class="row" style="padding-top:25px">
             <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
                 <h1>References</h1>
                 <ul>
-                    <li></li>
+                    <li>https://automationpanda.com/2020/07/07/arrange-act-assert-a-pattern-for-writing-good-tests/</li>
                 </ul>
             </div>
             <div class="col-4">

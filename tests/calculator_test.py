@@ -36,12 +36,20 @@ def test_calculator_subtract_method():
 
 def test_calculator_multiply_method():
     """Testing the Calculator Multiply"""
+    # Arrange
     calculator = Calculator()
     calculator.add(1)
-    assert calculator.multiply(5) == 5
+    # Act
+    result = calculator.multiply(5)
+    # Assert
+    assert result == 5
 
 def test_calculator_divide_method():
     """Testing the Calculator Multiply"""
+    # Arrange
     calculator = Calculator()
     calculator.add(10)
-    assert calculator.divide(5) == 2
+    # Act
+    result = calculator.divide(5)
+    # Assert
+    assert result == 2
