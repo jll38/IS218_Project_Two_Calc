@@ -11,7 +11,7 @@
                     Rather, it is a guideline for good practices in programing to be followed.
                     These principles apply to any object-oriented programming language
                 </p>
-                <p style="border-left:gray solid 5px; padding-left: 20px">
+                <p class="quote">
                     S - Single-Responisbility Principle<br/>
                     O - Open-closed Principle<br/>
                     L - Liskov Substitution Principle<br/>
@@ -30,7 +30,7 @@
                 <h1>Single-Responsibility Principle</h1>
                 <p>
                     The <strong>Single-Responsibility Principle</strong> states:<br/>
-                    <span style="border-left:gray solid 5px; padding-left: 20px">"A class should have one
+                    <span class="quote">"A class should have one
                     and only one reason to change"
                 </span> <br/>
                     This principle simply states that a class or function should only have
@@ -45,11 +45,15 @@
                     <li>More instances of code reusability</li>
                     <li>Easier testing</li>
                 </ul>
+                    This is shown in the calculator class as each operation such as add, subtract, divide,
+                    and multiply are their own functions.
                 </p>
             </div>
             <div class="col-4">
-
-                <p style="text-align: center"><i></i></p>
+                <img class="img-thumbnail" src="./static/images/calc_S.PNG" alt="calc program code"/>
+                <p style="text-align: center">
+                    <i>This example shows how the single responsiblity principle applies to the calculator
+                    program. Each function has a single purpose</i></p>
             </div>
         </div>
         <div class="row" style="padding-top:25px">
@@ -57,11 +61,15 @@
                 <h1>Open-Closed Principle</h1>
                 <p>
                     The <strong>Open-Closed Principle</strong> states:<br>
-                    <span style="border-left:gray solid 5px; padding-left: 20px">
+                    <span class="quote">
                         "Objects or entities should be open for extension but closed for modification."
                     </span><br/>
-                    This principle essentially means that a class should be extendable but without
-                    modifying the class itself.
+                    For simplicity sake, this means that you shouldn't need to modify existing code
+                    in order to add new functionality. Rather, add what you need and utilize the old
+                    code. In the case of the calculator program, we would not need to modify the
+                    addition and subtraction functions in order to add the multiplication and
+                    division functionality.
+
 
                 </p>
             </div>
@@ -90,7 +98,7 @@
                 <h1>Interface Segregation Principle</h1>
                 <p>
                     The <strong>Interface Segregation Principle</strong> states:<br>
-                    <span style="border-left:gray solid 5px; padding-left: 20px">""
+                    <span class="quote">""
                 </span> <br/>
 
                 </p>
@@ -115,4 +123,19 @@
                 <p style="text-align: center"><i></i></p>
             </div>
         </div>
+    <div class="row" style="padding-top:25px">
+            <div class="col-8" style="padding: 20px">
+                <h1>References</h1>
+                <ul>
+                    <li>
+                        https://towardsdatascience.com/solid-coding-in-python-1281392a6a94
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4">
+
+                <p style="text-align: center"><i></i></p>
+            </div>
+        </div>
+    </div>
 {% endblock %}

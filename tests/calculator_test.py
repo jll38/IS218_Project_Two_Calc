@@ -33,3 +33,15 @@ def test_calculator_subtract_method():
     """Testing the Calculator Subtract"""
     calculator = Calculator()
     assert calculator.subtract(1) == -1
+
+def test_calculator_multiply_method():
+    """Testing the Calculator Multiply"""
+    calculator = Calculator()
+    calculator.add(1)
+    assert calculator.multiply(5) == 5
+
+def test_calculator_divide_method():
+    """Testing the Calculator Multiply"""
+    calculator = Calculator()
+    calculator.add(10)
+    assert calculator.divide(5) == 2

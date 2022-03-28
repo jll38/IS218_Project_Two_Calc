@@ -1,3 +1,9 @@
 body {
 font-size: 100%;
 }
+.quote{
+    border-left:gray solid 5px;
+    padding-left: 20px;
+    margin:20px;
+    margin-left:0px;
+}

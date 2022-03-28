@@ -15,6 +15,16 @@ class Calculator:
         self.result = self.result - value_1
         return self.result
 
+    def multiply(self, value_1):
+        """ This is the multiplication method"""
+        self.result = self.result * value_1
+        return self.result
+
+    def divide(self,value_1):
+        """ This is the division method"""
+        self.result = self.result / value_1
+        return self.result
+
     def get_result(self):
         """ This is the get result method"""
         return self.result
