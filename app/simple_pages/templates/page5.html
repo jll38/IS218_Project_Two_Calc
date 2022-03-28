@@ -1,30 +1,39 @@
 {% extends "base.html" %}
 {% block content %}
     <div class="container-lg" style="background-color:white">
-    <div class="row">
-        <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
-            <h1>Pylint</h1>
-            <p>
-
-            </p>
+        <div class="row">
+            <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
+                <h1>Pylint</h1>
+                <p>
+                    <strong>Pylint</strong> is a tool that check for Python code errors.
+                    It also looks out for <i>code smells</i>, which are characteristics
+                    in code that indicates a deeper problem in the code, and if not delt with,
+                    could lead to a refactor being necessary. Pylint can recommend suggestions
+                    about how particular blocks of code can be refactored, along with details
+                    about the complexity of the code.
+                </p>
+            </div>
+            <div class="col-4">
+                <img class="img-thumbnail" src="https://miro.medium.com/max/1200/1*gW_OyzV6SyFJ0v_ybcFLuQ.png" alt="pylint logo"/>
+            </div>
         </div>
-        <div class="col-4">
+        <div class="row" style="padding-top:25px">
+            <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
+                <h1>References</h1>
+                <p>
+                <ul>
+                    <li>
+                        https://pylint.pycqa.org/en/latest/
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <div class="col-4">
 
+                <p style="text-align: center"><i></i></p>
+            </div>
         </div>
+
+
     </div>
-    <div class="row" style="padding-top:25px">
-        <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
-            <h1></h1>
-            <p>
-
-            </p>
-        </div>
-        <div class="col-4">
-
-            <p style="text-align: center"><i></i></p>
-        </div>
-    </div>
-
-
-</div>
 {% endblock %}
