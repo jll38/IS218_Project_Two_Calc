@@ -45,15 +45,15 @@
                     <li>More instances of code reusability</li>
                     <li>Easier testing</li>
                 </ul>
-                    This is shown in the calculator class as each operation such as add, subtract, divide,
-                    and multiply are their own functions.
+                This is shown in the calculator class as each operation such as add, subtract, divide,
+                and multiply are their own functions.
                 </p>
             </div>
             <div class="col-4">
                 <img class="img-thumbnail" src="./static/images/calc_S.PNG" alt="calc program code"/>
                 <p style="text-align: center">
                     <i>This example shows how the single responsiblity principle applies to the calculator
-                    program. Each function has a single purpose</i></p>
+                        program. Each function has a single purpose</i></p>
             </div>
         </div>
         <div class="row" style="padding-top:25px">
@@ -68,13 +68,25 @@
                     in order to add new functionality. Rather, add what you need and utilize the old
                     code. In the case of the calculator program, we would not need to modify the
                     addition and subtraction functions in order to add the multiplication and
-                    division functionality.
+                    division functionality. <br/> <br/>
+                    <span style="margin-left:40px"></span>It is very likely, if not certain, that when working on a
+                    project with multiple
+                    developers at once, one will be looking through and adding functionality to existing code
+                    that may or may not have been developed by themselves. So rather than going through
+                    code that a developer may not understand exactly how it works, other than it just does,
+                    they just add on top of the already existing functionality.
 
                 </p>
             </div>
             <div class="col-4">
-
-                <p style="text-align: center"><i></i></p>
+                <img class="img-thumbnail" src="./static/images/calc_O.png">
+                <p style="text-align: center">
+                    <i>
+                        This example show how mutliplication and division functionality
+                        was added to the calculator program without modifying the pre-existing
+                        functions
+                    </i>
+                </p>
             </div>
         </div>
         <div class="row" style="padding-top:25px">
@@ -82,8 +94,11 @@
                 <h1>Liskov Substitution Principle</h1>
                 <p>
                     The <strong>Liskov Substitution Principle</strong> states:<br>
-                    <span style="border-left:gray solid 5px; padding-left: 20px">""
+                    <span style="border-left:gray solid 5px; padding-left: 20px">"Functions that
+                        use pointers or references to base classes must be able to use object of derived
+                        classes without knowing."
                 </span> <br/>
+
 
                 </p>
             </div>
@@ -122,7 +137,7 @@
                 <p style="text-align: center"><i></i></p>
             </div>
         </div>
-    <div class="row" style="padding-top:25px">
+        <div class="row" style="padding-top:25px">
             <div class="col-8" style="padding: 20px">
                 <h1>References</h1>
                 <ul>
