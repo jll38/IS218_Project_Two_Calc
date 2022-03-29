@@ -28,3 +28,4 @@ class Calculator:
     def get_result(self):
         """ This is the get result method"""
         return self.result
+
