@@ -6,3 +6,4 @@ def test_calculation_is_instance():
     calculation = Calculations()
     assert isinstance(calculation, Calculations)
 
+

@@ -101,6 +101,11 @@
                     use pointers or references to base classes must be able to use object of derived
                     classes without knowing."
                 </p>
+                <p>
+                    In simplier terms, this means that if a subclass were to redefine a function that is
+                    also present in the parent class, a user should not be noticing any difference in behavior.
+                    It acts like a substitute for the base class. The same type of result should be returned.
+                </p>
 
             </div>
             <div class="col-4">
@@ -117,6 +122,13 @@
                 <p class="quote">
                     "Many client-specific interfaces are better than one general-purpose interface"
                 </p>
+                <p>
+                    When it comes to classes and interfaces, all methods and properties are "exposed".
+                    Basically, the principle states that a class should only have the interface needed,
+                    and to avoid methods that won't work or don't have a reason to be part of that class.
+                    Just because a subclass <i>can</i> invoke a method from the parent class, it doesn't mean
+                    that it should.
+                </p>
             </div>
             <div class="col-4">
 
@@ -132,9 +144,16 @@
                 <p class="quote">"Abstractions should not depend on details. Details should depend on abstraction.
                     High-level modules should not depend on low-level modules. Both should depend on abstractions"
                 </p>
+                <p>
+                    Abstractions should not be dependent on low-level methods, but rather depend
+                    on a third interface. If you have a program taking the input of a specific set
+                    of information such as a file with a script to process it. If that information were
+                    subject to change, the entire script would have to be written to account for the new format,
+                    and thus lose compatibility with the older file type.
+                </p>
             </div>
             <div class="col-4">
-
+                <img class="img-thumbnail" src="https://miro.medium.com/max/791/1*7rFi864XfIo2VGG9DCCF8g.png" alt="Package"/>
                 <p style="text-align: center"><i></i></p>
             </div>
         </div>
