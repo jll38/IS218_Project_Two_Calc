@@ -22,6 +22,76 @@
                      alt="OOPs Diagram"/>
             </div>
         </div>
+        <div class="row">
+            <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
+                <h1>Polymorphism</h1>
+                <p>
+                    Polymorphism allows for a child class to have the same methods as their parent classes,
+                    but used for different types. Unlike inheritance, where a child class can just utilize the same
+                    class as their parent, polymorphism allows that same method to be modified in the child class.
+                    This is also known as <strong>method overwriting.</strong>
+                </p>
+            </div>
+            <div class="col-4">
+                <img class="img-thumbnail"
+                     src="https://www.askpython.com/wp-content/uploads/2019/12/Polymorphism-in-Python.png"
+                     alt="Polymorphism"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
+                <h1>Encapsulation</h1>
+                <p>
+                    Encapsulation is the idea of wrapping data and the methods that work on the
+                    data within one unit. This restricts the accessibility of variables and methods, preventing the
+                    accidental modification of data. Object's variables can only be changed by an object's method.
+                    The calculator program utilizes encapsulation in this manner, making sure that no object can directly
+                    access another object or its data.
+                </p>
+            </div>
+            <div class="col-4">
+                <img class="img-thumbnail"
+                     src="https://pynative.com/wp-content/uploads/2021/08/encapsulation_python_class.jpg"
+                     alt="Encapsulation"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
+                <h1>Abstraction</h1>
+                <p>
+                    Abstraction is a concept utilized in order to hide the internal functionality
+                    of a program from users. For example, people don't think of an automobile as
+                    a set of thousands of moving parts working together, rather, they think of it
+                    as one object with its own behavior, which is driving.
+                    The calculator program utilizes abstraction by importing the operations package from
+                    the operations directory. The calculator class does not to the calculations itself, rather
+                    it is the classes within the operations package that are called upon in the calculator program.
+                </p>
+            </div>
+            <div class="col-4">
+                <img class="img-thumbnail"
+                     src="https://i.ytimg.com/vi/1eSCCQPBqP0/maxresdefault.jpg"
+                     alt="Abstraction"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
+                <h1>Inheritance</h1>
+                <p>
+                    Inheritance allows us to define a class that inherits/has all the methods and properties from
+                    another class. The newly created class is known as the <i>child</i> class, and the original
+                    class derived from is the <i>parent</i> class. Along with the original methods, new methods may
+                    also be included within the child class.
+                    When the calculator class imports the operations package, it inherits all the methods that
+                    the package uses.
+                </p>
+            </div>
+            <div class="col-4">
+                <img class="img-thumbnail"
+                     src="https://miro.medium.com/max/1400/1*CaTNbDiboMzEXuBB2AaDjg.png"
+                     alt="Inheritance"/>
+            </div>
+        </div>
         <div class="row" style="padding-top:25px">
             <div class="col-8" style="border-right: solid #d7d9db;padding: 20px">
                 <h1>Glossary</h1>
@@ -32,23 +102,29 @@
                     associated with it.<br/>
                     <strong>Class -</strong> A user-defined blueprint or prototype from which objects are created<br/>
                     <strong>Namespace - A system that has a unique name for each object in python.
-                    Python directories, such as the calculator folder containing the calculator py file.</strong><br/>
-                    <strong>Constructor -</strong> used when instantiating an object. Assigns values to data members in the class<br/>
-                    <strong>Fixture -</strong> Functions which run before test functions are ran. Feeds data to tests<br/>
+                        Python directories, such as the calculator folder containing the calculator py
+                        file.</strong><br/>
+                    <strong>Constructor -</strong> used when instantiating an object. Assigns values to data members in
+                    the class<br/>
+                    <strong>Fixture -</strong> Functions which run before test functions are ran. Feeds data to
+                    tests<br/>
                     <strong>Type Hint -</strong> Statically indicates the type of a value within python code<br/>
                     <code>def greet(name: str) -> str:</code><br/>
                     <strong>Type Cast -</strong>Used to specify what type you want a variable to be<br/>
                     Ex: <code>num = float(1)</code><br/>
-                    <strong>Unit Test -</strong> First level of software testing, the smallest testable parts of a software are tested.<br/>
+                    <strong>Unit Test -</strong> First level of software testing, the smallest testable parts of a
+                    software are tested.<br/>
                     https://www.geeksforgeeks.org/unit-testing-python-unittest/ - IMPORTANT FOR TESTING<br/>
-                    <strong>Static Method - </strong>A method that is bound to the class but not the object of the class.
+                    <strong>Static Method - </strong>A method that is bound to the class but not the object of the
+                    class.
                     Can't access or modify the class state. We usually use static methods for utility functions.
                     primarily a way to namespace your methods.<br/>
-                    <strong>Encapsulation -</strong> The idea off wrapping data and the methods that work on the
+                    <strong>Encapsulation -</strong> The idea of wrapping data and the methods that work on the
                     data within one unit. This restricts the accessibility of variables and methods, preventing the
                     accidental modification of data. Object's variables can only be changed by an object's method.<br/>
                     <strong>Polymorphism -</strong> Objects can have many different forms<br/>
-                    <strong>Abstraction -</strong> A blueprint for other classes. Creates a set of methods that must be created
+                    <strong>Abstraction -</strong> A blueprint for other classes. Creates a set of methods that must be
+                    created
                     in a child class built from the abstract class.<br/>
                 </p>
             </div>
@@ -56,16 +132,22 @@
 
                 <p style="text-align: center"><i></i></p>
             </div>
+
             <div class="col-8">
                 <h1>References</h1>
                 <ul>
                     <li>
                         https://www.geeksforgeeks.org/
                     </li>
+                    <li>
+                        https://www.geeksforgeeks.org/polymorphism-in-python/
+                    </li>
+                    <li>
+                        https://www.w3schools.com/python/python_inheritance.asp
+                    </li>
                 </ul>
             </div>
         </div>
-
 
 
     </div>
